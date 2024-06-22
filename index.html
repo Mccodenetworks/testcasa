@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown style</title>
+    <script src="https://kit.fontawesome.com/41d51bfab0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <img src="CASA.jpg" width="50px" class="logo">
+      
+       <div class="small"><i class="fa-solid fa-bars" onclick="openmenu()"></i></div>
+    
+      <ul class="big">
+        <li><a href="#home" class="light">Home</a></li>
+        <li><a href="# about" class="light">About</a></li>
+        <li><a href="#" class="light">Services</a></li>
+        <li><a href="#" class="light">contact</a></li>
+      </ul>
+
+    </nav>
+  </header>
+  
+
+  <div class="menu" id="menu">
+<img src="icons/error.png" width="30px" onclick="hide()">
+
+<ul class="big2">
+  <li><a href="#home" class="light">Home</a></li>
+  <li><a href="#about" class="light">About</a></li>
+  <li><a href="#" class="light">Services</a></li>
+  <li><a href="#" class="light">contact</a></li>
+</ul>
+
+  </div>
+
+
+
+
+<script>
+
+const menu = document.getElementById("menu");
+  const menuclcose = document.getElementById("menu");
+
+  function openmenu(){
+    menu.style.display = "flex";
+  }
+
+  menuclcose.addEventListener('click', hide);
+
+  function hide(){
+  menu.style.display= 'none';
+  }
+
+
+
+const light = document.querySelectorAll('.light');
+
+light.forEach(light =>{
+  light.addEventListener('click', () =>{
+    document.querySelector('.active')?.classList.remove('active');
+    light.classList.add('active');
+  });
+});
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
