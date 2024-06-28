@@ -16,6 +16,7 @@ header{
     top: 0;
     background: rgb(253, 253, 253);
     height: 70px;
+    z-index: 1;
 }
 
 nav{
