@@ -4,21 +4,28 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: rgb(61,61,61);
     height: 100vh;
     width: 100%;
 }
 
+/*header design*/
 header{
     width: 100%;
     position: fixed;
     top: 0;
     background: rgb(253, 253, 253);
     height: 70px;
+    box-shadow: 0px 4px 6px 0px rgb(0,0,0,0.2);
     z-index: 1;
 }
 
+/* navigation design */
 nav{
     display: flex;
     width: 100%;
@@ -50,22 +57,25 @@ nav .big li a{
 }
 
 
+/* hurbergar icon */
 nav .small{
     display: none;
     font-size: 20px;
 }
 
 a:hover{
-    background: rgb(134, 193, 216);
+    background: rgb(165, 228, 253);
     border-radius: 20px;
     border: none;
 }
 
+/* active effects design */
 .active{
-    background: rgb(111, 206, 230);
+    background: rgb(170, 237, 253);
     border-radius: 20px;
 }
 
+/* logo picture */
 .logo{
     border-radius: 50%;
 }
@@ -76,16 +86,18 @@ a:hover{
 }
 
 
+/* menu effects for max-width of 500px */
 .menu{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
-    background: rgb(0,0,0,0.2);
+    background: rgba(4, 33, 129, 0.801);
     display: none;
     top: 0;
     left: 0;
     position: fixed;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 
 .menu img{
@@ -124,7 +136,6 @@ a:hover{
     border-radius: 20px;
     border: none;
 }
-
 
 
 
@@ -631,12 +642,37 @@ a:hover{
 
 
 
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
 /* contact page section designs */
 .contact{
     height: 100vh;
     width: 100%;
     background: rgb(219, 252, 248);
 }
+
+
+
+
+
+
+
 
 
 /* max-width of 400px for about section */
@@ -769,6 +805,7 @@ font-size: 13px;
 
 
 }
+
 
 
 
