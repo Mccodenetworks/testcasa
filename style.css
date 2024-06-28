@@ -127,12 +127,656 @@ a:hover{
 
 
 
+/* home page section designs */
+.home{
+    height: 113vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 3, 58, 0.63), rgba(4, 3, 58, 0.63)), url(icons/bck1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0px 10%;
+}
+
+
+
+.message{
+    max-width: 600px;
+    height: auto;
+    position: absolute;
+    display: block;
+    top: 25%;
+    left: 10%;
+    padding: 20px;
+}
+
+.message p{
+    font-size: 20px;
+    font-family: poppins;
+    color: white;
+}
+
+.message h3{
+    color: aqua;
+    font-size: 40px;
+    font-family: poppins;
+    line-height: 110%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.btn-casa{
+    width: 60%;
+    height: 40px;
+    font-size: 17px;
+    font-family: poppins;
+    color: orangered;
+    border: none;
+    border-radius: 3px;
+   margin: 15px 10px;
+    border-bottom: 2px solid aqua;
+    display: inline-block;
+}
+
+.btn-casa:hover{
+    cursor: default;
+}
+
+
+
+/* home links */
+.follow1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 10px 20px;
+}
+
+.follow1 a{
+    background: none;
+}
+
+.follow1 i{
+    
+        padding: 6px;
+        margin-right: 4px;
+        font-size: 20px;
+        color: rgb(51, 241, 255);
+        border-radius: 3px;
+        cursor: pointer;
+        transition: transform 5000ms;
+        text-decoration: none;
+    
+    
+}
+
+.follow1 i:hover{
+    background: rgb(248, 249, 250);
+}
+
+
+
+/* about page section designs */
+.about{
+    height: auto;
+    width: 100%;
+    background: rgb(237, 246, 248);
+    overflow: hidden;
+    
+}
+
+.about h2{
+    font-size: 30px;
+    font-family: poppins;
+    color: rgb(252, 251, 251);
+    text-align: center;
+    background: steelblue;
+   
+}
+
+.container{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.box{
+    width: 360px;
+    height: 300px;
+    padding: 10px 20px;
+    border: none;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 3px 5px 0px rgb(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.box h3{
+    color: orange;
+    font-size: 25px;
+    font-family: poppins;
+    margin-bottom: 20px;
+}
+
+.box p{
+    font-size: 20px;
+}
+
+
+/* our mission box2 */
+
+.box2{
+    width: 365px;
+    height: 300px;
+    padding: 10px 20px;
+    border: none;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 3px 5px 0px rgb(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.box2 h3{
+    color: orange;
+    font-size: 25px;
+    font-family: poppins;
+    margin-bottom: 3px;
+}
+
+.box2 p{
+    font-size: 17px;
+}
+
+
+/* our values box */
+
+.box3{
+    width: 360px;
+    height: 300px;
+    padding: 10px 20px;
+    border: none;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 3px 5px 0px rgb(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.box3 h3{
+    color: orange;
+    font-size: 25px;
+    font-family: poppins;
+    margin-bottom: 5px;
+}
+
+.box3 p{
+    font-size: 17px;
+}
+
+.more-btn{
+    padding: 5px 10px;
+    background: orange;
+    font-family: poppins;
+    color: white;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+
+.more-btn:hover{
+    opacity: 80%;
+    box-shadow: 0px 3px 5px 0px rgb(0,0,0,0.2);
+}
+
+/* sub more values */
+.sub{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0,0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.show{
+    max-width: 70%;
+    background: white;
+    height: 500px;
+    padding: 20px;
+    transition: .4s ease-in-out;
+}
+
+.show h3{
+    color: orange;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: poppins;
+    text-align: center;
+}
+
+.show p{
+    font-size: 20px;
+    color: black;
+    padding: 5px 20px;
+}
+
+
+.error{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    padding: 5px;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.error:hover{
+    background: rgb(221, 216, 216);
+}
+
+/* show1 for box2 mission */
+
+.more-btn{
+    padding: 5px 10px;
+    background: orange;
+    font-family: poppins;
+    color: white;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+
+.more-btn:hover{
+    opacity: 80%;
+    box-shadow: 0px 3px 5px 0px rgb(0,0,0,0.2);
+}
+
+/* sub more mission */
+.sub1{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0,0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.show1{
+    max-width: 70%;
+    background: white;
+    height: 500px;
+    padding: 20px;
+    transition: .4s ease-in-out;
+}
+
+.show1 h3{
+    color: orange;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: poppins;
+    text-align: center;
+}
+
+.show1 p{
+    font-size: 20px;
+    color: black;
+    padding: 5px 20px;
+}
+
+
+.error1{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    padding: 5px;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.error1:hover{
+    background: rgb(221, 216, 216);
+}
+
+.more-btn1{
+    padding: 5px 10px;
+    background: orange;
+    font-family: poppins;
+    color: white;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+
+.more-btn1:hover{
+    opacity: 80%;
+    box-shadow: 0px 3px 5px 0px rgb(0,0,0,0.2);
+}
+
+
+/* past presidents  text*/
+
+.about h4{
+    color: orange;
+    font-family: poppins;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+/* card- past president profile*/
+
+.card-past{
+    max-width: 100%;
+    padding: 10px;
+    height: auto;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* pic-card box */
+.pic-card{
+    width: 300px;
+    height: 200px;
+    background: white;
+    box-shadow: 0px 3px 6px 0px rgb(0,0,0,0.2);
+    border-radius: 10px;
+    border: none;
+    padding: 6px;
+}
+
+.pic-card img{
+   position: absolute;
+   border-radius: 10px;
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* services page section designs */
+.services{
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    background: rgb(228, 252, 228);
+}
+
+.services h2{
+    font-size: 30px;
+    font-family: poppins;
+    color: rgb(252, 251, 251);
+    text-align: center;
+    background: steelblue;
+}
+
+.services h4{
+    font-size: 25px;
+    font-family: poppins;
+    color: orange;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+/* church weekly programs / serv-container */
+.serv-container{
+    max-width: 100%;
+    height: auto;
+  
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* programs */
+.programs{
+    width: 300px;
+    height: auto;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 68, 255);
+    border-bottom: 3px solid blue;
+    box-shadow: 0px 3px 6px 0px rgb(0,0,0,0.2);
+}
+
+.programs h4{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+.programs p{
+    font-size: 18px;
+    font-family: poppins;
+    color: black;
+    margin: 10px;
+    padding: 0px 15px;
+}
+
+/* upcoming events */
+
+.event{
+    max-width: 90%;
+    height: 400px;
+    background-image: linear-gradient(rgba(13, 13, 151, 0.8), rgba(13, 13, 151, 0.8)), url(icons/bck1.jpg);
+    margin: 20px 5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: static;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.event h4{
+    text-align: center;
+}
+
+/*this text can be updated with the upcoming event/programs */
+.event p{
+    color: white;
+    font-family: poppins;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+
+
+/* contact page section designs */
+.contact{
+    height: 100vh;
+    width: 100%;
+    background: rgb(219, 252, 248);
+}
+
+
+/* max-width of 400px for about section */
+
+@media(max-width:400px) and (max-width:430px){
+    .about{
+        height: auto;
+    }
+
+    .about h2{
+        font-size: 20px;
+        padding: 5px 15px;
+
+    }
+
+    .box{
+        height: 200px;
+    }
+
+
+    .box h3{
+        font-size: 20px;
+    }
+
+    
+.box p{
+    font-size: 15px;
+}
+
+    .box2{
+        height: 230px;
+    }
+
+    .box2 h3{
+        font-size: 20px;
+    }
+
+    
+.box2 p{
+    font-size: 13px;
+}
+
+.box3{
+    height: 230px;
+}
+
+.box3 h3{
+    font-size: 20px;
+}
+
+
+.box3 p{
+font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media screen max-width:400px */
 @media(max-width:500px){
+    .message{
+        top: 20%;
+        left: 0%;
+    }
+
+    
+.message p{
+    font-size: 14px;
+    font-family: poppins;
+    color: white;
+}
+
+.message h3{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+
+/* media screen max-width:320px  home page*/
+@media(max-width:320px){
+    .home{
+        height: 100vh;
+    }
+    .message{
+        top: 20%;
+        left: 0%;
+        max-width: 500px;
+    }
+
+    
+.message p{
+    font-size: 12px;
+    font-family: poppins;
+    color: white;
+}
+
+.message h3{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+}
+
+.btn-casa{
+    width: 70%;
+    height: 40px;
+    font-size: 10px;
+    font-family: poppins;
+    color: orangered;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    border-bottom: 2px solid aqua;
+    display: inline-block;
+}
+
+
+}
+
+
+
+
+
+
+
+/* media screen max-width side dont touch this codes */
+@media screen and (max-width:600px){
     nav .small{
         display: flex;
     }
@@ -142,9 +786,16 @@ a:hover{
     }
 }
 
-@media(min-width:520px){
+}
+
+
+@media(max-width:620px){
     
     nav .big{
+        display: none;
+    }
+
+    nav .small{
         display: flex;
     }
 
