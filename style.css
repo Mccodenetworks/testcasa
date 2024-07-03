@@ -19,7 +19,7 @@ header{
     width: 100%;
     position: fixed;
     top: 0;
-    background: rgb(253, 253, 253);
+    background: linear-gradient(to right, #00093c, #2d0b00);
     height: 70px;
     box-shadow: 0px 4px 6px 0px rgb(0,0,0,0.2);
     z-index: 1;
@@ -48,7 +48,7 @@ nav .big li{
 
 nav .big li a{
     text-decoration: none;
-    color: black;
+    color: rgb(228, 222, 222);
     font-size: 15px;
     font-family: poppins;
     padding: 10px 16px;
@@ -63,15 +63,19 @@ nav .small{
     font-size: 20px;
 }
 
+.small i{
+    color:white;
+}
+
 a:hover{
-    background: rgb(165, 228, 253);
+    background: rgb(49, 24, 1);
     border-radius: 20px;
     border: none;
 }
 
 /* active effects design */
 .active{
-    background: rgb(170, 237, 253);
+    background: rgb(49, 24, 1);
     border-radius: 20px;
 }
 
@@ -133,7 +137,7 @@ a:hover{
 }
 
 .big2 li a:hover{
-    background: rgb(134, 193, 216);
+    background: rgb(49, 24, 1);
     border-radius: 20px;
     border: none;
 }
@@ -144,7 +148,7 @@ a:hover{
 .home{
     height: 113vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 3, 58, 0.61), rgba(4, 3, 58, 0.575)), url(icons/bck1.jpg);
+    background-image: linear-gradient(rgba(4, 3, 58, 0.774), rgba(4, 3, 58, 0.815)), url(icons/bck1.jpg);
     background-position: center;
     background-size: cover;
     overflow: hidden;
@@ -221,17 +225,18 @@ a:hover{
 .about{
     height: auto;
     width: 100%;
-    background: rgb(237, 246, 248);
+    background: linear-gradient(to right, #00093c, #2d0b00);
     overflow: hidden;
     
 }
 
 .about h2{
     font-size: 30px;
+    padding: 10px 0px;
     font-family: poppins;
     color: rgb(252, 251, 251);
     text-align: center;
-    background: steelblue;
+    background: linear-gradient(to left, #00093c, #2d0b00);
    
 }
 
@@ -252,8 +257,7 @@ a:hover{
     height: 300px;
     padding: 10px 20px;
     border: none;
-    background: rgb(255, 255, 255);
-    box-shadow: 0px 3px 5px 0px rgb(0,0,0,0.2);
+    box-shadow: 0px 3px 18px 0px rgba(10, 10, 10, 0.801);
     border-radius: 10px;
 }
 
@@ -266,6 +270,7 @@ a:hover{
 
 .box p{
     font-size: 20px;
+    color: white;
 }
 
 
@@ -276,9 +281,11 @@ a:hover{
     height: 300px;
     padding: 10px 20px;
     border: none;
-    background: rgb(255, 255, 255);
+    background: linear-gradient(85deg to left top, rgb 34, 3, 121, rgb 45, 2, 161);
     box-shadow: 0px 3px 5px 0px rgb(0,0,0,0.2);
     border-radius: 10px;
+    /*border: 1px solid rgb(4, 4, 146);*/
+    background:linear-gradient(to right top, #00093c, #01116b, #021ba8);
 }
 
 .box2 h3{
@@ -290,6 +297,7 @@ a:hover{
 
 .box2 p{
     font-size: 17px;
+    color: white;
 }
 
 
@@ -300,8 +308,10 @@ a:hover{
     height: 300px;
     padding: 10px 20px;
     border: none;
-    background: rgb(255, 255, 255);
-    box-shadow: 0px 3px 5px 0px rgb(0,0,0,0.2);
+    /*border: 1px solid rgb(4, 4, 146);
+    /*background: rgb(34, 3, 121);*/
+    /*background:linear-gradient(to right top, #00093c, #01116b, #021ba8);*/
+    box-shadow: 0px 3px 18px 0px rgba(10, 10, 10, 0.801);
     border-radius: 10px;
 }
 
@@ -314,6 +324,7 @@ a:hover{
 
 .box3 p{
     font-size: 17px;
+    color: white;
 }
 
 .more-btn{
@@ -504,18 +515,41 @@ a:hover{
 
 /* pic-card box */
 .pic-card{
-    width: 300px;
-    height: 200px;
-    background: white;
-    box-shadow: 0px 3px 6px 0px rgb(0,0,0,0.2);
-    border-radius: 10px;
+    width: 200px;
+    height: auto;
+   
+    box-shadow: 0px 3px 20px 0px rgba(10, 10, 10, 0.801);
+    border-radius: 3px;
     border: none;
     padding: 6px;
 }
 
 .pic-card img{
-   position: absolute;
-   border-radius: 10px;
+  width: 100%;
+  border-radius: 0px;
+}
+
+.pic-card p{
+color: rgb(228, 221, 221);
+font-family: poppins;
+padding: opx 5px;
+}
+
+.view{
+    max-width: 20%;
+    height: 50px;
+    background: white;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.view-more{
+    margin: 0px 20px;
+    max-width: 100%;
+    background: rgb(245, 165, 165);
+    height: 400px;
+   display: none;
 }
 
 
@@ -540,15 +574,16 @@ a:hover{
     height: auto;
     width: 100%;
     overflow: hidden;
-    background: rgb(228, 252, 228);
+    background: linear-gradient(to right, #00093c, #2d0b00);
 }
 
 .services h2{
     font-size: 30px;
     font-family: poppins;
     color: rgb(252, 251, 251);
+    padding: 10px 0px;
     text-align: center;
-    background: steelblue;
+    background: linear-gradient(to left, #00093c, #2d0b00);
 }
 
 .services h4{
@@ -570,7 +605,7 @@ a:hover{
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
     justify-content: center;
 }
@@ -579,11 +614,10 @@ a:hover{
 .programs{
     width: 300px;
     height: auto;
-    background: white;
+    /*background:linear-gradient(to right top, #00093c, #01116b, #021ba8);*/
     border-radius: 10px;
-    border: 1px solid rgb(0, 68, 255);
-    border-bottom: 3px solid blue;
-    box-shadow: 0px 3px 6px 0px rgb(0,0,0,0.2);
+    border-bottom: 1px solid rgb(2, 2, 119);
+    box-shadow: 0px 3px 20px 0px rgba(10, 10, 10, 0.801);
 }
 
 .programs h4{
@@ -595,7 +629,7 @@ a:hover{
 .programs p{
     font-size: 18px;
     font-family: poppins;
-    color: black;
+    color: white;
     margin: 10px;
     padding: 0px 15px;
 }
@@ -638,7 +672,7 @@ a:hover{
 .contact{
     height: auto;
     width: 100%;
-    background: rgb(217, 226, 253);
+    background: linear-gradient(to right, #00093c, #2d0b00);
     overflow: hidden;
 }
 
@@ -646,8 +680,9 @@ a:hover{
     font-size: 30px;
     font-family: poppins;
     color: rgb(252, 251, 251);
+    padding: 10px 0px;
     text-align: center;
-    background: steelblue;
+    background: linear-gradient(to left, #00093c, #2d0b00);
    
 }
 
@@ -655,7 +690,7 @@ a:hover{
 .contact h3{
     font-size: 30px;
     font-family: poppins;
-    color: rgb(2, 2, 146);
+    color: rgb(253, 253, 255);
     text-align: center;
     margin: 20px;
    
@@ -680,15 +715,15 @@ a:hover{
     border-radius: 10px;
     border: none;
     box-shadow: 0px 4px 7px 0px rgb(0,0,0,0.2);
-    background: rgb(248, 248, 248);
+    background: rgb(34, 3, 121);
     padding: 20px 40px;
     align-items: center;
     justify-content: center;
-    border-bottom: 3px solid rgb(0, 77, 128);
+    border-bottom: 4px solid rgb(0, 36, 59);
 }
 
 .contact-card h3{
-    color: rgb(34, 3, 143);
+    color: rgb(255, 255, 255);
     font-family: poppins;
     font-size: 22px;
     border-bottom: 2px solid gray;
@@ -702,7 +737,7 @@ a:hover{
     height: 80px;
     margin-top: 10px;
     border-radius: 10px;
-    background: rgb(255, 254, 254);
+    background: rgb(43, 3, 151);
     padding: 0px 20px;
     margin-bottom: 10px;
 }
@@ -721,7 +756,7 @@ a:hover{
     margin-top: 15px;
     margin-left: 120px;
     margin-right: 10px;
-    color: blue;
+    color: rgb(250, 250, 250);
 
 }
 
@@ -732,7 +767,7 @@ a:hover{
     margin-left: 120px;
     font-size: 18px;
     margin-right: 10px;
-    color: blue;
+    color: rgb(252, 252, 252);
 }
 
 
@@ -744,6 +779,7 @@ a:hover{
 .social p{
     font-family: poppins;
     margin-bottom: 10px;
+    color: white;
 }
 
 .social i{
@@ -770,11 +806,11 @@ a:hover{
     border-radius: 10px;
     border: none;
     box-shadow: 0px 4px 7px 0px rgb(0,0,0,0.2);
-    background: rgb(248, 248, 248);
+    background:rgb(34, 3, 121);
     padding: 10px 20px;
     align-items: center;
     justify-content: center;
-    border-bottom: 3px solid rgb(0, 77, 128);
+    border-bottom: 4px solid rgb(0, 77, 128);
 }
 
 .contact-card2:hover{
@@ -782,7 +818,7 @@ a:hover{
 }
 
 .contact-card2 h3{
-    color: orangered;
+    color: white;
     font-family: poppins;
     font-size: 22px;
     text-align: center;
@@ -802,7 +838,7 @@ form{
 label{
     font-family:poppins;
     font-size: 15px;
-    color: black;
+    color: white;
     margin-bottom: 2px;
     display: block;
 }
@@ -811,7 +847,8 @@ label{
     width: 100%;
     height: 40px;
     margin-bottom: 10px;
-    background: rgb(238, 239, 240);
+    color: white;
+    background: rgb(51, 5, 179);
     border-radius: 6px;
     outline: none;
     border: none;
@@ -824,7 +861,8 @@ label{
    min-width: 100%;
     min-height: 90px;
     margin-bottom: 10px;
-    background: rgb(238, 239, 240);
+    color: white;
+    background:  rgb(51, 5, 179);
     border-radius: 6px;
     outline: none;
     border: none;
@@ -839,7 +877,7 @@ label{
 .btn-send{
 width: 60%;
 height: 40px;
-background: rgb(0, 162, 255);
+background: rgb(51, 5, 179);
 color: white;
 font-family: poppins;
 margin: 0px 20%;
@@ -847,7 +885,7 @@ border: none;
 border-radius: 20px;
 cursor: pointer;
 transition: .3s ease-in-out;
-border-bottom: 2px solid rgb(10, 2, 116);
+border-bottom: 2px solid rgb(51, 5, 179);
 }
 
 .btn-send:hover{
@@ -864,7 +902,8 @@ border-bottom: 2px solid rgb(10, 2, 116);
 .map-box{
     max-width: 100%;
     margin: 10px;
-    overflow: hidden;
+    background: white;
+   
 
 }
 
@@ -875,7 +914,10 @@ footer{
  
     width: 100%;
     height: auto;
-    background: rgb(235, 236, 236);
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+
 }
 
 .footer-inform{
@@ -883,9 +925,9 @@ footer{
     height: auto;
     display: flex;
     flex-wrap: wrap;
-flex-direction: row;
-align-items: center;
-justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 20px 10px;
   
 }
@@ -899,13 +941,13 @@ justify-content: center;
 
 .values h5{
     font-family: poppins;
-    color: black;
+    color: rgb(216, 214, 214);
     font-size: 20px;
     margin-bottom: 5px;
 }
 
 .values p{
-    color: black;
+    color: rgb(216, 214, 214);
     font-size: 18px;
     max-width: 300px;
 }
@@ -920,13 +962,13 @@ justify-content: center;
 
 .values1 h5{
     font-family: poppins;
-    color: black;
+    color: rgb(216, 214, 214);
     font-size: 20px;
     margin-bottom: 5px;
 }
 
 .values1 p{
-    color: black;
+    color: rgb(216, 214, 214);
     font-size: 18px;
     max-width: 300px;
 }
@@ -941,13 +983,13 @@ justify-content: center;
 
 .values2 h5{
     font-family: poppins;
-    color: black;
+    color: rgb(216, 214, 214);
     font-size: 20px;
     margin-bottom: 5px;
 }
 
 .values2 p{
-    color: black;
+    color: rgb(216, 214, 214);
     font-size: 18px;
     max-width: 300px;
 }
@@ -964,7 +1006,7 @@ footer i{
 
 .values1 a{
     text-decoration: none;
-    color: black;
+    color: rgb(216, 214, 214);
 }
 
 .values1 a:hover{
@@ -972,14 +1014,14 @@ footer i{
 }
 
 .values1 i{
-    color: black;
+    color: rgb(216, 214, 214);
     margin: 5px;
 }
 
 .values2 i{
     color: white;
     padding: 5px;
-    background: blue;
+    background: rgb(41, 41, 41);
     border-radius: 3px;
     border: none;
     margin-top: 5px;
@@ -987,6 +1029,11 @@ footer i{
 
 .values2 a:hover{
     background: none;
+}
+
+
+.mccode p{
+color: white;
 }
 
 
@@ -1027,6 +1074,14 @@ footer i{
         height: auto;
     }
 }
+
+
+@media screen and (min-width:300px) and (max-width:550px){
+.about h2, .contact h2, .services h2{
+    padding: 0px 0px;
+}
+}
+
 
 
 @media screen and (min-width:431px) and (max-width:700px){
@@ -1431,7 +1486,41 @@ footer i{
     
  }
 
+ @media screen and (min-width:430px) and (max-width:640px){
+    .programs{
+        width: 100%;
+    }
+ }
 
+@media screen and (min-width:320px) and (max-width:430px){
+    .values p{
+        font-size: 15px;
+    }
+
+    .values1 p{
+        font-size: 15px;
+    }
+
+    footer p{
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+
+    .footer-inform{
+        gap: 13px;
+    }
+
+    .programs{
+        width: 100%;
+    }
+
+    .programs p{
+        font-size: 16px;
+        margin: 5px 10px;
+    }
+
+    
+}
 
 
 /*max width of 320px for mobile */
@@ -1528,6 +1617,7 @@ footer i{
             height: auto;
         }
 
+       
         .values2{
             width: 100%;
             height: auto;
