@@ -1040,6 +1040,16 @@ color: white;
 
 
 
+
+
+
+ /*  responsiveness quaries on devices*/
+
+ 
+
+
+/* more show page display responsiveness */
+
 @media screen and (min-width:300px) and (max-width:1080px){
     .show1{
         max-width: 90%;
@@ -1077,7 +1087,6 @@ color: white;
 }
 
 
-
 /* programs responsiveness */
 @media screen and (min-width:300px) and (max-width:645px){
     .programs{
@@ -1085,6 +1094,15 @@ color: white;
         margin: 0px;
     }
 }
+
+
+/* all links title names responsiveness */
+@media screen and (min-width:300px) and (max-width:550px){
+.about h2, .contact h2, .services h2{
+    padding: 0px 0px;
+}
+}
+
 
 /* responsiveness for humberger */
 @media(max-width:800px){
@@ -1097,26 +1115,26 @@ color: white;
         display: flex;
     }
 
-    .home h2{
-        font-size: 20px;
-    }
 
-    .message{
-        max-width: 300px;
-        top: 20%;
-    }
-
-    .message p{
-        font-size: 17px;
-    }
 }
 
 
-@media screen and (min-width:300px) and (max-width:550px){
-.about h2, .contact h2, .services h2{
-    padding: 0px 0px;
+@media screen and (min-width:300px) and (max-width:600px){
+    .values p{
+        font-size: 15px;
+    }
+
+    .values1 p{
+        font-size: 15px;
+    }
+    
 }
-}
+
+
+
+
+
+
 
 
 
