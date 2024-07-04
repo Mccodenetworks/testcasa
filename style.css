@@ -869,13 +869,13 @@ footer{
 
 }
 
-footer p{
+.dev p{
     font-size: 13px;
     text-align: center;
 
 }
 
-footer i{
+.dev i{
     color: red;
 }
 
