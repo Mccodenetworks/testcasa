@@ -9,10 +9,18 @@ html{
 }
 
 body{
-    background: rgb(61,61,61);
-    height: 100vh;
+   
     width: 100%;
+    height: 100vh;
+    background-image: url(icons/bck1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
 }
+
+
 
 /*header design*/
 header{
@@ -146,46 +154,44 @@ a:hover{
 
 /* home page section designs */
 .home{
-    height: 113vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4, 3, 58, 0.774), rgba(4, 3, 58, 0.815)), url(icons/bck1.jpg);
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
+   height: 100vh;
+   width: 100%;
+   background: linear-gradient(rgba(0, 27, 77, 0.815), rgba(0, 27, 77, 0.815));
+
 }
+
 
 .message{
  position: absolute;
- top: 35%;
- left: 5%;
- color: white;
- max-width: 600px;
+ margin-top: 15%;
+ margin-left: 10%;
+ max-width: 620px;
+
 }
 
 .message h2{
-    font-family: poppins;
+    color: rgb(239, 245, 250);
     font-size: 40px;
-    max-width: 400px;
-    color: rgb(51, 241, 255);
+    font-family: poppins;
+    max-width: 450px;
     line-height: 100%;
 }
 
 .message p{
+    color: rgb(231, 252, 251);
     font-size: 20px;
+    font-family: sans-serif;
+    margin-right: 10px;
 }
 
 .btn-casa{
-    color: orangered;
+    padding: 10px 20px;
     font-family: poppins;
-    padding: 10px 5px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    border-bottom: 2px solid skyblue;
-    border-radius: 5px;
+    background: white;
+    color: orangered;
     border: none;
+    margin: 5px;
 }
-
-
 
 
 
@@ -205,8 +211,8 @@ a:hover{
     
         padding: 6px;
         margin-right: 1px;
-        font-size: 20px;
-        color: rgb(51, 241, 255);
+        font-size: 30px;
+        color: rgb(242, 245, 245);
         border-radius: 3px;
         cursor: pointer;
         transition: transform 5000ms;
@@ -216,7 +222,7 @@ a:hover{
 }
 
 .follow1 i:hover{
-    background: rgb(248, 249, 250);
+    background: rgb(9, 113, 216);
 }
 
 
@@ -227,8 +233,10 @@ a:hover{
     width: 100%;
     background: linear-gradient(to right, #00093c, #2d0b00);
     overflow: hidden;
+    animation: about linear;
     
 }
+
 
 .about h2{
     font-size: 30px;
@@ -327,26 +335,9 @@ a:hover{
     color: white;
 }
 
-.more-btn{
-    padding: 5px 10px;
-    background: orange;
-    font-family: poppins;
-    color: white;
-    margin-top: 5px;
-    border: none;
-    border-radius: 5px;
-    transition: .3s;
-    cursor: pointer;
-}
-
-
-.more-btn:hover{
-    opacity: 80%;
-    box-shadow: 0px 3px 5px 0px rgb(0,0,0,0.2);
-}
 
 /* sub more values */
-.sub{
+.sub,.sub1{
     width: 100%;
     height: 100%;
     top: 0;
@@ -359,15 +350,15 @@ a:hover{
     z-index: 1;
 }
 
-.show{
-    max-width: 70%;
+.show1{
+    max-width: 80%;
     background: white;
     height: 500px;
     padding: 20px;
     transition: .4s ease-in-out;
 }
 
-.show h3{
+.show1 h3{
     color: orange;
     font-size: 30px;
     margin-bottom: 20px;
@@ -375,49 +366,39 @@ a:hover{
     text-align: center;
 }
 
-.show p{
+.show1 p{
     font-size: 20px;
     color: black;
     padding: 5px 20px;
 }
 
 
-.error{
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    padding: 5px;
+ .show2{
+    max-width: 80%;
     background: white;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: .3s;
+    height: auto;
+    padding: 20px;
+    transition: .4s ease-in-out;
 }
 
-.error:hover{
-    background: rgb(221, 216, 216);
-}
 
-/* show1 for box2 mission */
-
-.more-btn{
-    padding: 5px 10px;
-    background: orange;
+.show2 h3{
+    color: orange;
+    font-size: 30px;
+    margin-bottom: 10px;
     font-family: poppins;
-    color: white;
-    margin-top: 5px;
-    border: none;
-    border-radius: 5px;
-    transition: .3s;
-    cursor: pointer;
+    text-align: center;
+}
+
+.show2 p{
+    font-size: 15px;
+    color: black;
+    padding: 5px 20px;
 }
 
 
-.more-btn:hover{
-    opacity: 80%;
-    box-shadow: 0px 3px 5px 0px rgb(0,0,0,0.2);
-}
 
-/* sub more mission */
+ sub more mission 
 .sub1{
     width: 100%;
     height: 100vh;
@@ -430,6 +411,7 @@ a:hover{
     position: fixed;
     z-index: 1;
 }
+
 
 .show1{
     max-width: 70%;
@@ -454,7 +436,7 @@ a:hover{
 }
 
 
-.error1{
+.error1, .error{
     position: absolute;
     top: 5%;
     left: 5%;
@@ -465,11 +447,13 @@ a:hover{
     transition: .3s;
 }
 
-.error1:hover{
+.error1:hover, .error:hover{
     background: rgb(221, 216, 216);
 }
 
-.more-btn1{
+
+
+.more-btn1, .more-btn{
     padding: 5px 10px;
     background: orange;
     font-family: poppins;
@@ -482,10 +466,11 @@ a:hover{
 }
 
 
-.more-btn1:hover{
+.more-btn1:hover, .more-btn:hover{
     opacity: 80%;
     box-shadow: 0px 3px 5px 0px rgb(0,0,0,0.2);
 }
+   
 
 
 /* past presidents  text*/
@@ -503,12 +488,13 @@ a:hover{
 
 .card-past{
     max-width: 100%;
-    padding: 10px;
+    padding: 10px 3px;
     height: auto;
-    margin: 10px;
+    margin: 5px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    flex-basis: auto;
+    gap: 5px;
     align-items: center;
     justify-content: center;
 }
@@ -517,7 +503,6 @@ a:hover{
 .pic-card{
     width: 200px;
     height: auto;
-   
     box-shadow: 0px 3px 20px 0px rgba(10, 10, 10, 0.801);
     border-radius: 3px;
     border: none;
@@ -534,37 +519,6 @@ color: rgb(228, 221, 221);
 font-family: poppins;
 padding: opx 5px;
 }
-
-.view{
-    max-width: 20%;
-    height: 50px;
-    background: white;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    display: flex;
-}
-
-.view-more{
-    margin: 0px 20px;
-    max-width: 100%;
-    background: rgb(245, 165, 165);
-    height: 400px;
-   display: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -644,7 +598,6 @@ padding: opx 5px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position: static;
     padding: 10px;
     align-items: center;
     justify-content: center;
@@ -714,12 +667,13 @@ padding: opx 5px;
     height: auto;
     border-radius: 10px;
     border: none;
-    box-shadow: 0px 4px 7px 0px rgb(0,0,0,0.2);
+    box-shadow: 0px 3px 20px 0px rgba(10, 10, 10, 0.801);
     background: rgb(34, 3, 121);
-    padding: 20px 40px;
+    padding: 20px 20px;
     align-items: center;
     justify-content: center;
     border-bottom: 4px solid rgb(0, 36, 59);
+    margin-right: 10px;
 }
 
 .contact-card h3{
@@ -733,6 +687,7 @@ padding: opx 5px;
 
 .box-details{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 80px;
     margin-top: 10px;
@@ -755,7 +710,6 @@ padding: opx 5px;
     position: absolute;
     margin-top: 15px;
     margin-left: 120px;
-    margin-right: 10px;
     color: rgb(250, 250, 250);
 
 }
@@ -801,11 +755,11 @@ padding: opx 5px;
 /* send message */
 
 .contact-card2{
-    width: 600px;
+   max-width: 600px;
     height: auto;
     border-radius: 10px;
     border: none;
-    box-shadow: 0px 4px 7px 0px rgb(0,0,0,0.2);
+    box-shadow: 0px 3px 25px 0px rgba(10, 10, 10, 0.801);
     background:rgb(34, 3, 121);
     padding: 10px 20px;
     align-items: center;
@@ -893,12 +847,6 @@ border-bottom: 2px solid rgb(51, 5, 179);
 }
 
 
-
-
-
-
-
-
 .map-box{
     max-width: 100%;
     margin: 10px;
@@ -911,170 +859,107 @@ border-bottom: 2px solid rgb(51, 5, 179);
 
 /*footer section */
 footer{
- 
-    width: 100%;
     height: auto;
+    width: 100%;
+    color: white;
+    line-height: 20px;
     background: linear-gradient(to right, #00093c, #2d0b00);
-    border-top-left-radius: 100px;
+    border-top-left-radius: 50px;
     border-top-right-radius: 100px;
 
 }
 
 .footer-inform{
     width: 100%;
-    height: auto;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 20px 10px;
-  
+    gap: 10px 20px;
 }
 
-.values{
-    width: auto;
-    height: 170px;
-    padding: 10px 20px;
-
-}
-
-.values h5{
-    font-family: poppins;
-    color: rgb(216, 214, 214);
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-
-.values p{
-    color: rgb(216, 214, 214);
-    font-size: 18px;
+.info-footer, .info-footer2, .info-footer3{
+    margin: 10px 10px;
+    padding: 10px;
     max-width: 300px;
 }
 
-
-.values1{
-    width: auto;
-    height: 170px;
-    padding: 10px 20px;
-
+.info-footer h3,.info-footer2 h3,.info-footer3 h3{
+    width: fit-content;
+    margin-bottom: 20px;
+    position: relative;
+    font-family: poppins;
 }
 
-.values1 h5{
-    font-family: poppins;
-    color: rgb(216, 214, 214);
-    font-size: 20px;
+.footer-inform p, .footer-inform2 p, .footer-inform3 p{
+    font-size: 16px;
     margin-bottom: 5px;
 }
 
-.values1 p{
-    color: rgb(216, 214, 214);
-    font-size: 18px;
-    max-width: 300px;
-}
 
-.values2{
-    width: auto;
-    height: 170px;
-    padding: 10px 20px;
-   
-    
-}
 
-.values2 h5{
-    font-family: poppins;
-    color: rgb(216, 214, 214);
-    font-size: 20px;
+
+.info-footer2 i{
+    color: rgb(215, 224, 235);
+    margin-right: 10px;
     margin-bottom: 5px;
 }
 
-.values2 p{
-    color: rgb(216, 214, 214);
-    font-size: 18px;
-    max-width: 300px;
-}
 
-
-footer i{
-    color: red;
-    margin-right: 5px;
-}
-
-.values1 p{
-    margin-left: 5px;
-}
-
-.values1 a{
-    text-decoration: none;
-    color: rgb(216, 214, 214);
-}
-
-.values1 a:hover{
-    background: none;
-}
-
-.values1 i{
-    color: rgb(216, 214, 214);
-    margin: 5px;
-}
-
-.values2 i{
-    color: white;
-    padding: 5px;
-    background: rgb(41, 41, 41);
-    border-radius: 3px;
+.info-footer3 i{
+    padding: 10px;
+    background: rgb(26, 8, 133);
+    color: rgb(247, 242, 242);
+    border-radius: 50px;
     border: none;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
-.values2 a:hover{
-    background: none;
+hr{
+    width: 80%;
+    margin: 20px auto;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.Dev{
+    text-align: center;
+}
+
+.Dev i{
+    color: red;
 }
 
 
-.mccode p{
-color: white;
+
+.Dev P{
+    font-size: 2px;
+    margin-bottom: 10px;
 }
-
-
-
-
-
-
-
 
  /*  responsiveness quaries on devices*/
 
- 
+
 
 
 /* more show page display responsiveness */
 
 @media screen and (min-width:300px) and (max-width:1080px){
-    .show1{
+    .show1, .show2{
         max-width: 90%;
-        height: 80vh;
+        height: auto;
     }
 
     .show1 p{
         font-size: 15px;
-        padding: 5px 10px;
+        padding: 10px 10px;
     }
 
-    .box{
+    .box, .box2, .box3{
         width: 100%;
         height: auto;
     }
 
-    .box2{
-        width: 100%;
-        height: auto;
-    }
-
-    .box3{
-        width: 100%;
-        height: auto;
-    }
 }
 
 
@@ -1094,6 +979,47 @@ color: white;
         margin: 0px;
     }
 }
+
+
+/*home section message */
+@media screen and (min-width:300px) and (max-width:530px){
+    .message{
+        margin-left: 5%;
+        margin-top: 40%;
+    }
+
+    .message h2{
+        font-size: 30px;
+        max-width: 400px;
+    }
+
+    .message p{
+        font-size: 15px;
+        max-width: 350px;
+        margin-right: 10px;
+    }
+}
+
+
+
+@media screen and (min-width:300px) and (max-width:430px){
+
+    .contact h3{
+        font-size: 20px;
+    }
+
+    .box-details h6, .box-details p{
+        margin-left: 50px;
+        max-width: 400px;
+    }
+
+    .box-details img{
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+    }
+}
+
 
 
 /* all links title names responsiveness */
@@ -1119,66 +1045,4 @@ color: white;
 }
 
 
-@media screen and (min-width:300px) and (max-width:600px){
-    .values p{
-        font-size: 15px;
-    }
 
-    .values1 p{
-        font-size: 15px;
-    }
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
- 
-
-
-
-
-
-
-
-     
-
-    
-   
-    
-     
-
-
-
- 
