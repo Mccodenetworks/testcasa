@@ -233,7 +233,6 @@ a:hover{
     width: 100%;
     background: linear-gradient(to right, #00093c, #2d0b00);
     overflow: hidden;
-    animation: about linear;
     
 }
 
@@ -337,7 +336,7 @@ a:hover{
 
 
 /* sub more values */
-.sub,.sub1{
+.sub1{
     width: 100%;
     height: 100%;
     top: 0;
@@ -348,28 +347,6 @@ a:hover{
     justify-content: center;
     position: fixed;
     z-index: 1;
-}
-
-.show1{
-    max-width: 80%;
-    background: white;
-    height: 500px;
-    padding: 20px;
-    transition: .4s ease-in-out;
-}
-
-.show1 h3{
-    color: orange;
-    font-size: 30px;
-    margin-bottom: 20px;
-    font-family: poppins;
-    text-align: center;
-}
-
-.show1 p{
-    font-size: 20px;
-    color: black;
-    padding: 5px 20px;
 }
 
 
@@ -396,44 +373,6 @@ a:hover{
     padding: 5px 20px;
 }
 
-
-
- sub more mission 
-.sub1{
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background: rgb(0,0,0,0.9);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    z-index: 1;
-}
-
-
-.show1{
-    max-width: 70%;
-    background: white;
-    height: 500px;
-    padding: 20px;
-    transition: .4s ease-in-out;
-}
-
-.show1 h3{
-    color: orange;
-    font-size: 30px;
-    margin-bottom: 20px;
-    font-family: poppins;
-    text-align: center;
-}
-
-.show1 p{
-    font-size: 20px;
-    color: black;
-    padding: 5px 20px;
-}
 
 
 .error1, .error{
@@ -506,7 +445,6 @@ a:hover{
     box-shadow: 0px 3px 20px 0px rgba(10, 10, 10, 0.801);
     border-radius: 3px;
     border: none;
-    padding: 6px;
 }
 
 .pic-card img{
@@ -517,7 +455,9 @@ a:hover{
 .pic-card p{
 color: rgb(228, 221, 221);
 font-family: poppins;
-padding: opx 5px;
+padding: opx 10px;
+text-align: center;
+max-width: 100%;
 }
 
 
@@ -863,7 +803,7 @@ footer{
     width: 100%;
     color: white;
     line-height: 20px;
-    background: linear-gradient(to right, #00093c, #2d0b00);
+    background: linear-gradient(to right, #00093c, #180600);
     border-top-left-radius: 50px;
     border-top-right-radius: 100px;
 
@@ -931,6 +871,8 @@ hr{
     border: none;
     border-bottom: 1px solid white;
 }
+
+
 
  /*  responsiveness quaries on devices*/
 
