@@ -869,6 +869,16 @@ footer{
 
 }
 
+footer p{
+    font-size: 13px;
+    text-align: center;
+
+}
+
+footer i{
+    color: red;
+}
+
 .footer-inform{
     width: 100%;
     display: flex;
@@ -920,21 +930,6 @@ hr{
     margin: 20px auto;
     border: none;
     border-bottom: 1px solid white;
-}
-
-.Dev{
-    text-align: center;
-}
-
-.Dev i{
-    color: red;
-}
-
-
-
-.Dev P{
-    font-size: 2px;
-    margin-bottom: 10px;
 }
 
  /*  responsiveness quaries on devices*/
