@@ -172,6 +172,14 @@
   </div>
 
   <div class="pic-card">
+    <img src="icons/Eld Jose.jpg" width="150px">
+    <p>Eld Joshua Nuertey<br>
+      Year: 2022-2023
+    </p>
+  </div>
+
+
+  <div class="pic-card">
     <img src="icons/Eld Solo.jpg" width="150px">
     <p>Eld Solomon Asare <br>
       Year: 2023-2024
@@ -181,9 +189,24 @@
 </div>
 
 
+<div class="large-photos" id="large-photos">
+  <img src="icons/larg10.jpg" id="fullImg" >
+  <span onclick="hidelage()">X</span>
+</div>
+
+<h4>Our Photo Gallery</h4>
+<div class="photo-gallery">
+  <img src="icons/larg10.jpg" width="400px" onclick="openFullImg(this.src)">
+  <img src="icons/thres.jpg" width="200px" onclick="openFullImg(this.src)">
+  <img src="icons/larg5.jpg" width="400px" onclick="openFullImg(this.src)">
+</div>
+
+<button class="photos-btn" onclick="location.href='index2.html'">more photos </button>
+
 
 
 </div>
+
 
 
 <!--Services page section-->
@@ -239,7 +262,7 @@
               <div class="box-details">
                 <img src="icons/telephone.png" width=50px" height="50px">
                 <h6>Call Us</h6>
-                 <p>+233 5686 7168</p>
+                 <p>+233 535459306</p>
               </div>
 
              <div class="box-details">
@@ -430,6 +453,23 @@ function moreview(){
 
 viewmore.classList.toggle('view');
 
+}
+
+
+const large = document.getElementById("large-photos");
+
+function hidelage(){
+  large.style.display = "none";
+}
+
+
+
+const largephotos = document.getElementById("large-photos");
+const fullImg = document.getElementById("fullImg");
+
+function openFullImg(pic){
+  largephotos.style.display = "flex";
+  fullImg.src = pic;
 }
 
 
