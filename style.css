@@ -461,6 +461,92 @@ max-width: 100%;
 }
 
 
+.photo-gallery{
+    max-width: 100%;
+    padding: 10px 3px;
+    height: auto;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.photo-gallery img{
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px 15px 0px rgb(0,0,0,0.5);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    max-width: 100%;
+}
+
+.photo-gallery img:hover{
+    transform: scale(1.04);
+}
+
+.photos-btn {
+    font-family: poppins;
+    padding: 10px 20px;
+    background: orange;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.photos-btn:hover{
+    opacity: 80%;
+   outline: 1px solid white;
+}
+
+/* large-photos */
+.large-photos{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0,0.9);
+    display: none;
+    position: fixed;
+    z-index: 99;
+}
+
+.large-photos img{
+    max-width: 500px;
+    width: 90%;
+}
+
+.large-photos span{
+    top: 5%;
+    right: 5%;
+    position: absolute;
+    font: 30px;
+    color: rgb(8, 8, 8);
+    font-family: poppins;
+    padding: 5px 10px;
+    background: white;
+    border-radius: 3px;
+    border: none;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.large-photos span:hover{
+    background: rgb(223, 221, 221);
+}
+
+
+
+
+
 
 
 /* services page section designs */
@@ -508,8 +594,8 @@ max-width: 100%;
 .programs{
     width: 300px;
     height: auto;
-    /*background:linear-gradient(to right top, #00093c, #01116b, #021ba8);*/
     border-radius: 10px;
+    border: 1px solid rgb(2, 2, 119);
     border-bottom: 1px solid rgb(2, 2, 119);
     box-shadow: 0px 3px 20px 0px rgba(10, 10, 10, 0.801);
 }
@@ -700,7 +786,7 @@ max-width: 100%;
     border-radius: 10px;
     border: none;
     box-shadow: 0px 3px 25px 0px rgba(10, 10, 10, 0.801);
-    background:rgb(34, 3, 121);
+    background:rgb(3, 90, 189);
     padding: 10px 20px;
     align-items: center;
     justify-content: center;
@@ -742,7 +828,7 @@ label{
     height: 40px;
     margin-bottom: 10px;
     color: white;
-    background: rgb(51, 5, 179);
+    background:rgb(189, 241, 250);
     border-radius: 6px;
     outline: none;
     border: none;
@@ -756,7 +842,7 @@ label{
     min-height: 90px;
     margin-bottom: 10px;
     color: white;
-    background:  rgb(51, 5, 179);
+    background:  rgb(189, 241, 250);
     border-radius: 6px;
     outline: none;
     border: none;
